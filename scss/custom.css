@@ -92,7 +92,6 @@
   width: 100%;
   text-align: center;
   display: flex;
-  border: 1px solid #ebeff5;
   border-radius: 10px;
   background: #fff;
   overflow: hidden;
@@ -150,9 +149,15 @@
   border: 1px solid rgb(229, 232, 243);
   color: rgba(36, 34, 60, 0.2);
 }
+.setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--not-visited p span:nth-child(1) {
+  display: none;
+}
 .setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active {
   background: #00B4FF;
   color: #ffffff;
+}
+.setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active p span:nth-child(1) {
+  display: none;
 }
 .setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--active:before {
   background: #00B4FF;
@@ -168,6 +173,9 @@
 }
 .setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited {
   background: #ffffff;
+}
+.setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited p span:nth-child(2) {
+  display: none;
 }
 .setup-wizard__header-content .setup-wizard__progress-bar-container .setup-wizard__progress-bar .setup-wizard__progress-step--visited p {
   font-weight: 600;
@@ -441,11 +449,11 @@
   position: absolute;
   font-family: "Urbanist", sans-serif;
   right: 0;
-  top: -18px;
+  top: -21px;
   display: block;
   border-radius: 9px 9px 9px 0px;
   background: #3f04fe;
-  font-size: 11px;
+  font-size: 13px;
   color: #ffffff;
   font-weight: 600;
   padding: 5px 6px;
