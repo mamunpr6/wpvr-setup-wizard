@@ -28,7 +28,6 @@ $button-bg-color: #F7F4FF;
     }
   
     @media (max-width: 1280px) {
-      padding: 42px 0 20px 0;
       font-size: 28px;
     }
   }
@@ -79,23 +78,3 @@ $button-bg-color: #F7F4FF;
     font-weight: 500;
     padding: 17px 22px;
   }
-
-
-      // footer button section
-      .setup-wizard__footer-buttons {
-        @extend %button-container;
-        padding-top: 30px;
-        padding-bottom: 153px;
-    
-        .setup-wizard__button-left {
-          @extend %common-button;
-          color: $color-white;
-          background-color: $primary-color;
-        }
-        .setup-wizard__button-right {
-          @extend %common-button;
-          color: $primary-color;
-          border: 1px solid #ebe4ff;
-          background: #f7f4ff;
-        }
-      }

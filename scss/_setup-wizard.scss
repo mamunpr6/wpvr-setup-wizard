@@ -9,7 +9,7 @@
   &__content {
   }
 
-  &__header-content{
+  &__header-content {
     .setup-wizard__logo-container {
       text-align: center;
       padding: 28px 0;
@@ -76,7 +76,7 @@
             color: #6e786e;
   
             span {
-              border: 1px solid $step_color_primary;
+              border: 1px solid $secondary-color;
               border-radius: 50%;
               width: 24px;
               height: 24px;
@@ -125,7 +125,6 @@
               color: #081e43;
   
               span {
-                background: $secondary-color;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -142,7 +141,7 @@
     }
   }
 
-  &__body-content{
+  &__body-content {
     // step 1
     // welcome section
       .setup-wizard__welcome-section-container {
@@ -154,6 +153,7 @@
     
         .setup-wizard__welcome-video-container {
           position: relative;
+          margin-bottom: 28px;
     
           .setup-wizard__welcome-video-preview {
             max-width: 836px;
@@ -166,7 +166,6 @@
             height: 480px;
             width: 836px;
             margin: 0 auto;
-            border-radius: $border-radius;
     
             @media (max-width: 1240px) {
               width: 750px;
@@ -181,13 +180,13 @@
     
       .setup-wizard__video-play-button {
         position: absolute;
-        top: 40%;
+        top: 42%;
         left: 45%;
     
         button{
           padding: 20px 36px;
           border-radius: 16px;
-          background-color: #FF2E3B;
+          background-color: #F30104;
           border: none;
           cursor: pointer;
         }
@@ -268,6 +267,7 @@
           align-items: center;
           justify-content: center;
           gap: 15px;
+          color: $primary-color;
         }
       }
   
@@ -326,6 +326,7 @@
           }
         }
         .setup-wizard__pro-features-price{
+          p{
           color: #73707D;
           text-align: center;
           font-family: Urbanist;
@@ -335,6 +336,8 @@
           line-height: 28px;
           padding: 23px 40px;
           border-top: 1px solid #FFF;
+          position: relative;
+          }
           .setup-wizard__pro-features-price-amount{
             color: #3F04FE;
             font-family: Urbanist;
@@ -385,6 +388,25 @@
       // }
     }
 
+      // footer button section
+      .setup-wizard__footer-buttons {
+        @extend %button-container;
+        padding-top: 30px;
+        padding-bottom: 153px;
+    
+        .setup-wizard__button-left {
+          @extend %common-button;
+          color: $color-white;
+          background-color: $primary-color;
+        }
+        .setup-wizard__button-right {
+          @extend %common-button;
+          color: $primary-color;
+          border: 1px solid #ebe4ff;
+          background: #f7f4ff;
+        }
+      }
+
     // step 2
     // industry section
     .setup-wizard__industry-section-container{
@@ -404,7 +426,7 @@
           margin-top: 28px;
 
           .setup-wizard__single-industry{
-            border: 2px solid #EAE4FF;
+            border: 1.5px solid #EAE4FF;
             border-radius: 10px;
             padding: 20px 10px;
             display: flex;
@@ -416,7 +438,7 @@
             transition: all 0.3s;
 
             &:hover{
-              border: 2px solid #3F04FE; 
+              border: 1.5px solid #3F04FE; 
               box-shadow: 0px 9px 14px rgba(184, 196, 217, 0.5);
             }
 
@@ -435,6 +457,15 @@
               fill: #3F04FE;
             }
           }
+
+          .active{
+            border: 1.5px solid #3F04FE; 
+            box-shadow: 0px 9px 14px rgba(184, 196, 217, 0.5);
+
+          .setup-wizard__single-industry-image path{
+            fill: #3F04FE;
+          }
+        }
         }
       }
     }
@@ -605,6 +636,25 @@
       }
     }
 
+          // footer button section
+      .setup-wizard__footer-buttons {
+        @extend %button-container;
+        padding-top: 30px;
+        padding-bottom: 153px;
+    
+        .setup-wizard__button-left {
+          @extend %common-button;
+          color: $color-white;
+          background-color: $primary-color;
+        }
+        .setup-wizard__button-right {
+          @extend %common-button;
+          color: $primary-color;
+          border: 1px solid #ebe4ff;
+          background: #ffffff;
+        }
+      }
+
     // step 3
     // done section
     .setup-wizard__done-section-container{
@@ -674,7 +724,20 @@
       }
 
       .setup-wizard__subscribe-button-container{
-        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 11px;
+        margin-top: 24px;
+
+        p{
+          color: #73707D;
+          font-family: Urbanist;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.1;
+        }
 
         // switcher
         .switch {
