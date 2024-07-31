@@ -514,6 +514,24 @@
 
         .setup-wizard__settings-single-content {
          margin-bottom: 25px;
+         position: relative;
+
+         .setup-wizard__settings-single-content--pro-content{
+          position: absolute;
+          font-family: $primary-font;
+          right: 0;
+          top: -18px;
+          display: block;
+          border-radius: 9px 9px 9px 0px;
+          background: $primary-color;
+          font-size: 11px;
+          color: #ffffff;
+          font-weight: 600;
+          padding: 5px 6px;
+          text-transform: capitalize;
+          z-index: 1;
+          line-height: 0.8;
+         }
 
           &:last-child {
             margin-bottom: 0;
