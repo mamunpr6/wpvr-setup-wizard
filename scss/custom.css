@@ -248,6 +248,9 @@
   align-items: start;
   gap: 27px;
 }
+.setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image {
+  width: 40px;
+}
 .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-text-content .setup-wizard__feature-heading {
   color: #0e003c;
   font-family: Urbanist;
