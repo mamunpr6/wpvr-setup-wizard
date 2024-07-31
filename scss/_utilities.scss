@@ -1,0 +1,82 @@
+// Color
+$primary-color: #3f04fe;
+$heading-color: #0e003c;
+$secondary-color: #00B4FF;
+$body-background-color: #E4E0F1;
+$step_color_primary: #6c798f;
+$progress-active-font-color: #FFFFFF;
+$progress-visited-font-color: #081e43;
+$progress-not-visited-font-color: #73707D;
+$primary-font: 'Urbanist', sans-serif;
+$border-radius: '10px';
+$color-white: #FFFFFF;
+$button-bg-color: #F7F4FF;
+
+
+
+// setup wizard heading one
+.setup-wizard__heading-one {
+    color: $heading-color;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    font-family: $primary-font;
+    line-height: 1;
+  
+    .setup-wizard__heading-one-highlight {
+      font-weight: 700;
+    }
+  
+    @media (max-width: 1280px) {
+      padding: 42px 0 20px 0;
+      font-size: 28px;
+    }
+  }
+
+  .setup-wizard__description {
+    font-size: 16px;
+    color: #73707D;
+    text-align: center;
+    line-height: 1.625;
+    max-width: 655px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-family: $primary-font;
+    font-style: normal;
+    margin-top: 20px;
+  
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+  
+    @media (max-width: 1280px) {
+      padding: 0;
+    }
+  }
+
+  %section-container{
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 40px 30px;
+    box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.70);
+  }
+
+  %button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  %common-button{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 17px 22px;
+  }
+

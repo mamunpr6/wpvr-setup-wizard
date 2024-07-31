@@ -1,0 +1,298 @@
+.setup-wizard {
+  background-color: $body-background-color;
+  &__container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 930px;
+  }
+
+  &__content {
+  }
+
+  &__logo-container {
+    text-align: center;
+    padding: 28px 0;
+
+    figure {
+      margin: 0;
+      .setup-wizard__wizard-logo {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__progress-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .setup-wizard__progress-bar {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      border: 1px solid #ebeff5;
+      border-radius: 10px;
+      background: #fff;
+      overflow: hidden;
+
+      .setup-wizard__progress-step {
+        flex-grow: 1;
+        position: relative;
+        padding: 15px 16px 15px 50px;
+        background-color: transparent;
+
+        &:first-child {
+          padding: 15px 16px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: 2;
+          top: 0px;
+          bottom: 0;
+          right: -18px;
+          margin: auto 0;
+          width: 40px;
+          height: 43px;
+          background: rgb(255 255 255);
+          transform: rotate(-43deg);
+          clip-path: polygon(100% 2%, 2% 100%, 100% 100%);
+          border-radius: 0 0 10px 0;
+          border-right: 2px solid #ebeff5;
+          border-bottom: 2px solid #ebeff5;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 400;
+          gap: 9px;
+          margin: 0;
+          font-family: "-apple-system", sans-serif;
+          color: #6e786e;
+
+          span {
+            border: 1px solid $step_color_primary;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        &--not-visited {
+          p {
+            color: #73707d;
+
+            span {
+              border: 1px solid rgba(229, 232, 243, 1);
+              color: rgba(36, 34, 60, 0.2);
+            }
+          }
+        }
+
+        &--active {
+          background: $secondary-color;
+          color: #ffffff;
+
+          &:before {
+            background: $secondary-color;
+            border-right: none;
+            border-bottom: none;
+          }
+
+          p {
+            font-weight: 500;
+            color: #fff;
+
+            span {
+              border: 1px solid #ffffff;
+            }
+          }
+        }
+
+        &--visited {
+          background: #ffffff;
+
+          p {
+            font-weight: 600;
+            color: #081e43;
+
+            span {
+              background: $secondary-color;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              svg {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__welcome-section-container {
+    @extend %section-container;
+
+    .setup-wizard__welcome-text-content {
+      margin-bottom: 20px;
+    }
+
+    .setup-wizard__welcome-video-container {
+      position: relative;
+
+      .setup-wizard__welcome-video-preview {
+        max-width: 836px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      iframe {
+        height: 480px;
+        width: 836px;
+        margin: 0 auto;
+        border-radius: $border-radius;
+
+        @media (max-width: 1240px) {
+          width: 750px;
+        }
+        @media (max-width: 1024px) {
+          height: 400px;
+          width: 650px;
+        }
+      }
+
+  }
+
+  .setup-wizard__video-play-button {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+
+    button{
+      padding: 20px 36px;
+      border-radius: 16px;
+      background-color: #FF2E3B;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .setup-wizard__main-buttons {
+    @extend %button-container;
+
+    .setup-wizard__button-left {
+      @extend %common-button;
+      color: $color-white;
+      background-color: $primary-color;
+    }
+    .setup-wizard__button-right {
+      @extend %common-button;
+      color: $primary-color;
+      border: 1px solid #ebe4ff;
+      background: #f7f4ff;
+    }
+  }
+}
+
+  &__features-section-container {
+    @extend %section-container;
+
+    .setup-wizard__features-text-content {
+      margin-bottom: 20px;
+    }
+
+    .setup-wizard__feature-lists {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 138px;
+      grid-row-gap: 20px;
+      .setup-wizard__single-feature {
+        display: flex;
+        align-items: start;
+        gap: 27px;
+        .setup-wizard__feature-image {
+        }
+        .setup-wizard__feature-text-content {
+          .setup-wizard__feature-heading {
+            color: #0e003c;
+            font-family: Urbanist;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px;
+          }
+          .setup-wizard__feature-description {
+            color: #73707d;
+            font-family: Urbanist;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+
+    .setup-wizard__feature-list-button-container{
+      margin-top: 46px;
+
+      .setup-wizard__feature-list-button{
+        @extend %common-button;
+        background: #F7F4FF; 
+        border: 1px solid #EBE4FF;
+        font-weight: 700; 
+        font-size: 16px; 
+        line-height: 1.6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+    }
+
+    .setup-wizard__pro-features{
+      background: linear-gradient(100.82deg, #C0ECFF 0.77%, #E0F6FF 20.23%, #F4F0FF 79.76%, #E7DEFF 100.21%);
+      .setup-wizard__pro-features-text-content {
+        margin-bottom: 20px;
+      }
+  
+      .setup-wizard__pro-feature-heading{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.75;
+        color: $primary-color;
+        font-family: $primary-font;
+      }
+    }
+
+    .setup-wizard__main-buttons {
+      @extend %button-container;
+      margin-top: 20px;
+
+      .setup-wizard__button-left {
+        @extend %common-button;
+        color: $color-white;
+        background-color: $primary-color;
+      }
+      .setup-wizard__button-right {
+        @extend %common-button;
+        color: $primary-color;
+        border: 1px solid #ebe4ff;
+        background: #f7f4ff;
+      }
+    }
+  }
+
+
+}

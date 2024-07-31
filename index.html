@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setup Wizard</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/custom.css" />
+  </head>
+
+  <body>
+    <div class="setup-wizard">
+      <div class="setup-wizard__container">
+        <div class="setup-wizard__content">
+          <!-- Logo container -->
+          <div class="setup-wizard__logo-container">
+            <figure>
+              <img
+                class="setup-wizard__wizard-logo"
+                src="./assets/wpvr-logo.webp"
+                alt="wizard-logo"
+              />
+            </figure>
+          </div>
+
+          <!-- Progress bar container -->
+          <div class="setup-wizard__progress-bar-container">
+            <div class="setup-wizard__progress-bar">
+              <div
+                class="setup-wizard__progress-step setup-wizard__progress-step--visited"
+              >
+                <p>
+                  <span>
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.935499 4.11026C0.75836 4.11077 0.584981 4.16272 0.435422 4.26009C0.285862 4.35746 0.166233 4.49629 0.0903747 4.66049C0.0145167 4.8247 -0.0144703 5.00759 0.00676735 5.18799C0.028005 5.36839 0.0985994 5.53894 0.210383 5.67991L2.59335 8.67442C2.67832 8.78265 2.78723 8.86851 2.91104 8.92489C3.03485 8.98127 3.16999 9.00652 3.30522 8.99857C3.59447 8.98263 3.8556 8.82391 4.02209 8.56294L8.97213 0.385047L8.97465 0.380997C9.0211 0.307842 9.00604 0.162868 8.91017 0.0717941C8.88383 0.0467839 8.85279 0.0275693 8.81894 0.0153333C8.78509 0.00309728 8.74916 -0.00190095 8.71336 0.00064652C8.67755 0.00319399 8.64264 0.0132332 8.61076 0.0301458C8.57888 0.0470584 8.55072 0.0704864 8.528 0.0989868C8.52623 0.101228 8.5244 0.103435 8.52251 0.105608L3.53034 5.89168C3.51134 5.91369 3.48827 5.93162 3.46246 5.94442C3.43666 5.95721 3.40863 5.96462 3.38001 5.9662C3.35139 5.96779 3.32274 5.96353 3.29574 5.95367C3.26874 5.9438 3.24392 5.92853 3.22272 5.90874L1.56591 4.3621C1.39384 4.20029 1.16893 4.11044 0.935499 4.11026Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </span>
+                  Welcome
+                </p>
+              </div>
+              <div
+                class="setup-wizard__progress-step setup-wizard__progress-step--active"
+              >
+                <p><span> 2 </span> Settings &amp; Industry</p>
+              </div>
+              <div
+                class="setup-wizard__progress-step setup-wizard__progress-step--not-visited"
+              >
+                <p><span> 3 </span> Done</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- welcome section container -->
+          <div class="setup-wizard__welcome-section-container">
+            <div class="setup-wizard__welcome-text-content">
+              <h1
+                class="setup-wizard__welcome-heading setup-wizard__heading-one"
+              >
+                Hello, welcome to
+                <span class="setup-wizard__heading-one-highlight">WPVR</span>
+              </h1>
+              <p
+                class="setup-wizard__welcome-description setup-wizard__description"
+              >
+                WP VR is a powerful virtual tour creator for WordPress that lets
+                you create captivating walkthroughs of any property or location,
+                with detailed and interactive information to enrich your
+                audience's experience with your business.
+              </p>
+            </div>
+            <!-- video container -->
+            <div class="setup-wizard__welcome-video-container">
+              <div
+                id="video_play_button"
+                class="setup-wizard__video-play-button"
+              >
+                <button class="">
+                  <svg
+                    width="22"
+                    height="27"
+                    viewBox="0 0 27 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.9389 15.27L2.27013 1.66876V28.8713L24.9389 15.27Z"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                id="setup_video"
+                class="setup-wizard__welcome-video-iframe"
+                style="display: none"
+              >
+                <iframe id="recommendation-video_set" title="Video"></iframe>
+              </div>
+
+              <img
+                id="recommendation-preview"
+                class="setup-wizard__welcome-video-preview"
+                loading="lazy"
+                src="./assets/youtube-thumbnill.webp"
+                alt="preview image"
+              />
+            </div>
+            <!-- setup wizard buttons -->
+            <div class="setup-wizard__main-buttons">
+              <a href="#" class="setup-wizard__button-left">
+                Let’s create your first tour
+              </a>
+              <a href="#" class="setup-wizard__button-right">
+                Check the guide
+              </a>
+            </div>
+          </div>
+
+          <!-- features container -->
+          <div class="setup-wizard__features-section-container">
+            <div class="setup-wizard__features-text-content">
+              <h1
+                class="setup-wizard__feature-heading setup-wizard__heading-one"
+              >
+                <span class="setup-wizard__heading-one-highlight"
+                  >WPVR Features</span
+                >
+              </h1>
+              <p
+                class="setup-wizard__feature-description setup-wizard__description"
+              >
+                Transform Properties, Rooms & Spaces into 360 Virtual Tours
+                Using WP VR Features
+              </p>
+            </div>
+
+            <div class="setup-wizard__feature-lists">
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+              <div class="setup-wizard__single-feature">
+                <div class="setup-wizard__feature-image">
+                  <img src="./assets/video.png" alt="explainer video" />
+                </div>
+                <div class="setup-wizard__feature-text-content">
+                  <p class="setup-wizard__feature-heading">
+                    Guided Explainer Video
+                  </p>
+                  <p class="setup-wizard__feature-description">
+                    Display Your Entire Property With Virtual Floor Plans
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- setup wizard buttons -->
+            <div class="setup-wizard__feature-list-button-container">
+              <a href="#" class="setup-wizard__feature-list-button">
+                Check All Features
+                <svg
+                  width="17"
+                  height="14"
+                  viewBox="0 0 17 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.171 7.02277L1.47856 6.65834"
+                    stroke="#73707D"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.0348 11.8971L15.1709 7.008L10.2614 1.85151"
+                    stroke="#73707D"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!--pro features -->
+            <div class="setup-wizard__pro-features">
+              <div class="setup-wizard__pro-features-text-content">
+                <h1 class="setup-wizard__pro-feature-heading">
+                  <span class="setup-wizard__pro-feature-heading-highlight"
+                    >WPVR Features</span
+                  >
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
