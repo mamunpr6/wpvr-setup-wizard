@@ -47,14 +47,14 @@
   box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.7);
 }
 
-.setup-wizard__welcome-section-container .setup-wizard__main-buttons {
+.setup-wizard__footer-buttons, .setup-wizard__welcome-section-container .setup-wizard__main-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button, .setup-wizard__features-section-container .setup-wizard__feature-list-button-container .setup-wizard__feature-list-button, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
+.setup-wizard__footer-buttons .setup-wizard__button-right, .setup-wizard__footer-buttons .setup-wizard__button-left, .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button, .setup-wizard__features-section-container .setup-wizard__feature-list-button-container .setup-wizard__feature-list-button, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -269,6 +269,7 @@
 }
 .setup-wizard__features-section-container .setup-wizard__feature-list-button-container {
   margin-top: 46px;
+  margin-bottom: 67px;
 }
 .setup-wizard__features-section-container .setup-wizard__feature-list-button-container .setup-wizard__feature-list-button {
   background: #F7F4FF;
@@ -360,4 +361,17 @@
   justify-content: center;
   gap: 15px;
   color: #FFFFFF;
+}
+.setup-wizard__footer-buttons {
+  padding-top: 30px;
+  padding-bottom: 153px;
+}
+.setup-wizard__footer-buttons .setup-wizard__button-left {
+  color: #FFFFFF;
+  background-color: #3f04fe;
+}
+.setup-wizard__footer-buttons .setup-wizard__button-right {
+  color: #3f04fe;
+  border: 1px solid #ebe4ff;
+  background: #f7f4ff;
 }/*# sourceMappingURL=custom.css.map */
