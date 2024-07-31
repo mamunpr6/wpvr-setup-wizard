@@ -283,7 +283,7 @@
         </div>
 
         <!-- step 2 setup wizard body content  -->
-        <div class="setup-wizard__body-content">
+        <div class="setup-wizard__body-content" style="display: none;">
 
           <!-- industry section container -->
           <div class="setup-wizard__industry-section-container">
@@ -387,7 +387,6 @@
               </h1>
             </div>
 
-            <!-- checkbox -->
             <div class="setup-wizard__settings-content">
               <div class="setup-wizard__settings-single-content">
                 <input type="checkbox" id="media_resizer">
@@ -419,12 +418,49 @@
           </div>
 
         </div>
+
+        <!-- step 3 setup wizard body content -->
+        <div class="setup-wizard__body-content">
+
+          <!-- done section container -->
+          <div class="setup-wizard__done-section-container">
+            <!-- text content -->
+            <div class="setup-wizard__done-text-content setup-wizard__done-text-content--done-icon">
+              <img src="./assets/icons/done-icon.svg" alt="done">
+              <h1 class="setup-wizard__done-heading setup-wizard__heading-one">
+                You Are
+                <span class="setup-wizard__heading-one-highlight">Done</span>
+              </h1>
+            </div>
+
+            <!-- testimonial container -->
+            <div class="setup-wizard__testimonial">
+              <h2 class="setup-wizard__testimonial-title">Testimonials</h2>
+              <div class="setup-wizard__testimonial-card">
+                <div class="setup-wizard__testimonial-single-card">
+                  <p class="setup-wizard__testimonial-text-content">
+                    A good solution for providing 360 services and saving clients additional subscription costs for
+                    hosted 360 services. Essential tools for providing interactive image experience.
+                  </p>
+                  <p class="setup-wizard__testimonial-text-author">- Marjoline</p>
+                  <img class="setup-wizard__testimonial-quote-icon" src="./assets/icons/quote-icon.svg" alt="Quote">
+                </div>
+                <div class="setup-wizard__testimonial-single-card">
+                  <p class="setup-wizard__testimonial-text-content">
+                    A good solution for
+                  </p>
+                  <p class="setup-wizard__testimonial-text-author">- Marjoline</p>
+                  <img class="setup-wizard__testimonial-quote-icon" src="./assets/icons/quote-icon.svg" alt="Quote">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-
     </div>
-  </div>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
