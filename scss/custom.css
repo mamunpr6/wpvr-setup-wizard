@@ -39,7 +39,7 @@
   }
 }
 
-.setup-wizard__body-content .setup-wizard__industry-section-container, .setup-wizard__body-content .setup-wizard__features-section-container, .setup-wizard__body-content .setup-wizard__welcome-section-container {
+.setup-wizard__body-content .setup-wizard__settings-section-container, .setup-wizard__body-content .setup-wizard__industry-section-container, .setup-wizard__body-content .setup-wizard__features-section-container, .setup-wizard__body-content .setup-wizard__welcome-section-container {
   margin-top: 20px;
   border-radius: 10px;
   background: #FFF;
@@ -416,4 +416,75 @@
 }
 .setup-wizard__body-content .setup-wizard__industry-section-container .setup-wizard__popular-industries .setup-wizard__popular-industry-list .setup-wizard__single-industry:hover .setup-wizard__single-industry-image path {
   fill: #3F04FE;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-text-content {
+  margin-bottom: 20px;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content {
+  margin-top: 30px;
+  max-width: 632px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content {
+  margin-bottom: 25px;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content:last-child {
+  margin-bottom: 0;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content input[type=checkbox] {
+  display: none;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content input[type=checkbox] + label {
+  display: inline-block;
+  text-align: start;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #626A70;
+  position: relative;
+  cursor: pointer;
+  line-height: 25px;
+  padding: 20px 40px 20px 68px;
+  width: 100%;
+  background: #FAF9FF;
+  border: 1px solid #EAE4FF;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid #D8CCFF;
+  border-radius: 4px;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content input[type=checkbox]:checked + label:before {
+  content: "";
+  background-color: #3f04fe;
+  background-image: url('data:image/svg+xml;utf8,<svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.625L4.375 10L13.375 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .setup-wizard__settings-single-content input[type=checkbox] + label:hover {
+  border-color: #3F04FE;
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .rex-wpvr-setup-wizard-legal-text {
+  color: #6C798F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: left;
+  margin-top: 8px;
+  font-family: "Inter";
+}
+.setup-wizard__body-content .setup-wizard__settings-section-container .setup-wizard__settings-content .rex-wpvr-setup-wizard-legal-text a {
+  color: #3F04FE;
 }/*# sourceMappingURL=custom.css.map */

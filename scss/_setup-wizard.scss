@@ -457,6 +457,154 @@
         }
       }
     }
+
+    // general settings section
+    .setup-wizard__settings-section-container{
+      @extend %section-container;
+
+      .setup-wizard__settings-text-content {
+        margin-bottom: 20px;
+      }
+
+      // checkbox section
+      .setup-wizard__settings-content{
+        margin-top: 30px;
+        max-width: 632px;
+        margin-left: auto;
+        margin-right: auto;
+
+        // .rex-wpvr-setup-form-group{
+        //   margin-bottom: 16px;
+
+        //   .rex-wpvr-required-text{
+        //     font-size: 12px;
+        //     font-family: 'Roboto';
+        //     text-align: start;
+        //     margin-top: 8px;
+        //     color: red;
+        //     display: none;
+
+        //     &.active{
+        //       display: block;
+        //     }
+        //   }
+
+        //   &:last-child{
+        //     margin-bottom: 0;
+        //   }
+
+        //   label{
+        //     color: #363B4E;
+        //     font-size: 14px;
+        //     font-style: normal;
+        //     font-weight: 500;
+        //     line-height: 1;
+        //     margin-bottom: 8px;
+        //     display: inline-block;
+        //   }
+
+        //   input{
+        //     border-radius: 10px;
+        //     border: 1px solid #EAE4FF;
+        //     background: #FFF;
+        //     color: #363B4E;
+        //     width: 100%;
+        //     padding: 5px 15px;
+        //     height: 50px;
+        //     font-size: 16px;
+        //     font-family: 'Roboto';
+        //     font-weight: 400;
+        //     color: #6C798F;
+
+        //     &::placeholder {
+        //       font-size: 16px;
+        //       font-family: 'Roboto';
+        //       font-weight: 400;
+        //       color: #6C798F
+        //     }
+
+        //     &:focus {
+        //       border-color: #3F04FE;
+        //       outline: none;
+        //       box-shadow: 0 0 5px rgba(184, 196, 217, 0.5);
+        //     }
+        //   }
+        // }
+
+        .setup-wizard__settings-single-content {
+         margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          input[type="checkbox"] {
+            display: none;
+          }
+        
+          input[type="checkbox"] + label {
+            display: inline-block;
+            text-align: start;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            color: #626A70;
+            position: relative;
+            cursor: pointer;
+            line-height: 25px;
+            padding: 20px 40px 20px 68px;
+            width: 100%;
+            background: #FAF9FF; 
+            border: 1px solid #EAE4FF; 
+            border-radius: 3px;
+            transition: all 0.3s;
+          }
+        
+          input[type="checkbox"] + label:before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #FFFFFF;
+            border: 1px solid #D8CCFF;
+            border-radius: 4px;
+          }
+        
+          input[type="checkbox"]:checked + label:before {
+            content: "";
+            background-color: #3f04fe;
+            background-image: url('data:image/svg+xml;utf8,<svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.625L4.375 10L13.375 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          input[type="checkbox"] + label:hover {
+            border-color: #3F04FE;
+          }
+        }
+        
+
+        .rex-wpvr-setup-wizard-legal-text {
+          color: #6C798F;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.71;
+          text-align: left;
+          margin-top: 8px;
+          font-family: 'Inter';
+
+
+          & a {
+            color: #3F04FE;
+          }
+        }
+      }
+    }
   }
 
 
