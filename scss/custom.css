@@ -39,7 +39,7 @@
 }
 
 .setup-wizard__body-content .setup-wizard__done-section-container, .setup-wizard__body-content .setup-wizard__settings-section-container, .setup-wizard__body-content .setup-wizard__industry-section-container, .setup-wizard__body-content .setup-wizard__features-section-container, .setup-wizard__body-content .setup-wizard__welcome-section-container {
-  margin-top: 20px;
+  margin-top: 34px;
   border-radius: 10px;
   background: #FFF;
   padding: 40px 30px;
@@ -74,7 +74,7 @@
 }
 .setup-wizard__header-content .setup-wizard__logo-container {
   text-align: center;
-  padding: 28px 0;
+  padding: 32px 0;
 }
 .setup-wizard__header-content .setup-wizard__logo-container figure {
   margin: 0;
@@ -191,7 +191,7 @@
   height: 9px;
 }
 .setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__welcome-text-content {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__welcome-video-container {
   position: relative;

@@ -12,7 +12,7 @@
   &__header-content {
     .setup-wizard__logo-container {
       text-align: center;
-      padding: 28px 0;
+      padding: 32px 0;
   
       figure {
         margin: 0;
@@ -166,7 +166,7 @@
         @extend %section-container;
     
         .setup-wizard__welcome-text-content {
-          margin-bottom: 20px;
+          margin-bottom: 25px;
         }
     
         .setup-wizard__welcome-video-container {
