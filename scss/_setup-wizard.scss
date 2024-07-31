@@ -209,7 +209,7 @@
     @extend %section-container;
 
     .setup-wizard__features-text-content {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .setup-wizard__feature-lists {
@@ -254,6 +254,8 @@
         font-weight: 700; 
         font-size: 16px; 
         line-height: 1.6;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -261,37 +263,118 @@
       }
     }
 
-    .setup-wizard__pro-features{
+    .setup-wizard__pro-features-section-container{
       background: linear-gradient(100.82deg, #C0ECFF 0.77%, #E0F6FF 20.23%, #F4F0FF 79.76%, #E7DEFF 100.21%);
-      .setup-wizard__pro-features-text-content {
-        margin-bottom: 20px;
-      }
+
+      .setup-wizard__pro-features{
+        padding: 38px 46px;
+
+        .setup-wizard__pro-features-text-content {
+          margin-bottom: 20px;
   
-      .setup-wizard__pro-feature-heading{
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 1.75;
-        color: $primary-color;
-        font-family: $primary-font;
+          .setup-wizard__pro-feature-heading{
+            color: #0E003C;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 42px;
+  
+            .setup-wizard__pro-feature-heading-highlight{
+              color: #3F04FE;
+              font-family: Inter;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 42px;
+            }
+          }
+        }
+
+        .setup-wizard__pro-feature-lists{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 143px;
+          row-gap: 25px;
+
+          .setup-wizard__single-pro-feature{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 17px;
+
+            .setup-wizard__single-pro-feature-icon{
+
+            }
+            .setup-wizard__single-pro-feature-title{
+            color: #000;
+            font-family: Urbanist;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 27px;
+            }
+          }
+        }
+      }
+      .setup-wizard__pro-features-price{
+        color: #73707D;
+        text-align: center;
+        font-family: Urbanist;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 23px 40px;
+        border-top: 1px solid #FFF;
+        .setup-wizard__pro-features-price-amount{
+          color: #3F04FE;
+          font-family: Urbanist;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px;
+        }
+      }
+      .setup-wizard__pro-feature-list-button-container{
+  
+        .setup-wizard__pro-feature-list-button{
+          @extend %common-button;
+          background: $primary-color; 
+          font-weight: 500; 
+          font-size: 16px; 
+          font-family: $primary-font;
+          line-height: 1.6;
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          color: $color-white;
+        }
       }
     }
 
-    .setup-wizard__main-buttons {
-      @extend %button-container;
-      margin-top: 20px;
 
-      .setup-wizard__button-left {
-        @extend %common-button;
-        color: $color-white;
-        background-color: $primary-color;
-      }
-      .setup-wizard__button-right {
-        @extend %common-button;
-        color: $primary-color;
-        border: 1px solid #ebe4ff;
-        background: #f7f4ff;
-      }
-    }
+
+    // end here
+
+    // .setup-wizard__main-buttons {
+    //   @extend %button-container;
+    //   margin-top: 20px;
+
+    //   .setup-wizard__button-left {
+    //     @extend %common-button;
+    //     color: $color-white;
+    //     background-color: $primary-color;
+    //   }
+    //   .setup-wizard__button-right {
+    //     @extend %common-button;
+    //     color: $primary-color;
+    //     border: 1px solid #ebe4ff;
+    //     background: #f7f4ff;
+    //   }
+    // }
   }
 
 

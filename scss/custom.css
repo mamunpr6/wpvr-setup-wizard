@@ -47,14 +47,14 @@
   box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.7);
 }
 
-.setup-wizard__features-section-container .setup-wizard__main-buttons, .setup-wizard__welcome-section-container .setup-wizard__main-buttons {
+.setup-wizard__welcome-section-container .setup-wizard__main-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-left, .setup-wizard__features-section-container .setup-wizard__feature-list-button-container .setup-wizard__feature-list-button, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button, .setup-wizard__features-section-container .setup-wizard__feature-list-button-container .setup-wizard__feature-list-button, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-right, .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -235,7 +235,7 @@
   background: #f7f4ff;
 }
 .setup-wizard__features-section-container .setup-wizard__features-text-content {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .setup-wizard__features-section-container .setup-wizard__feature-lists {
   display: grid;
@@ -273,33 +273,88 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
-.setup-wizard__features-section-container .setup-wizard__pro-features {
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container {
   background: linear-gradient(100.82deg, #C0ECFF 0.77%, #E0F6FF 20.23%, #F4F0FF 79.76%, #E7DEFF 100.21%);
 }
-.setup-wizard__features-section-container .setup-wizard__pro-features .setup-wizard__pro-features-text-content {
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features {
+  padding: 38px 46px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-features-text-content {
   margin-bottom: 20px;
 }
-.setup-wizard__features-section-container .setup-wizard__pro-features .setup-wizard__pro-feature-heading {
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-features-text-content .setup-wizard__pro-feature-heading {
+  color: #0E003C;
+  font-family: Inter;
   font-size: 24px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.75;
-  color: #3f04fe;
+  line-height: 42px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-features-text-content .setup-wizard__pro-feature-heading .setup-wizard__pro-feature-heading-highlight {
+  color: #3F04FE;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-feature-lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 143px;
+       column-gap: 143px;
+  row-gap: 25px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-feature-lists .setup-wizard__single-pro-feature {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 17px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features .setup-wizard__pro-feature-lists .setup-wizard__single-pro-feature .setup-wizard__single-pro-feature-title {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price {
+  color: #73707D;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 23px 40px;
+  border-top: 1px solid #FFF;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price .setup-wizard__pro-features-price-amount {
+  color: #3F04FE;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button {
+  background: #3f04fe;
+  font-weight: 500;
+  font-size: 16px;
   font-family: "Urbanist", sans-serif;
-}
-.setup-wizard__features-section-container .setup-wizard__main-buttons {
-  margin-top: 20px;
-}
-.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
+  line-height: 1.6;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   color: #FFFFFF;
-  background-color: #3f04fe;
-}
-.setup-wizard__features-section-container .setup-wizard__main-buttons .setup-wizard__button-right {
-  color: #3f04fe;
-  border: 1px solid #ebe4ff;
-  background: #f7f4ff;
 }/*# sourceMappingURL=custom.css.map */
