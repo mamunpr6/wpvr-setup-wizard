@@ -241,11 +241,9 @@
   left: 45%;
 }
 .setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__video-play-button button {
-  padding: 20px 36px;
-  border-radius: 16px;
-  background-color: #F30104;
   border: none;
   cursor: pointer;
+  background: none;
 }
 .setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__main-buttons .setup-wizard__button-left {
   color: #FFFFFF;
