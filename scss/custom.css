@@ -276,9 +276,6 @@
   align-items: start;
   gap: 27px;
 }
-.setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image img {
-  width: 35px;
-}
 @media (max-width: 768px) {
   .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image img {
     width: 30px;
@@ -412,6 +409,9 @@
     font-size: 17px;
   }
 }
+.setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price {
+  position: relative;
+}
 .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price p {
   color: #73707D;
   text-align: center;
@@ -442,6 +442,26 @@
   .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price .setup-wizard__pro-features-price-amount {
     font-size: 22px;
   }
+}
+.setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price .setup-wizard__pro-features-price-tag {
+  position: absolute;
+  font-family: "Urbanist", sans-serif;
+  right: 0;
+  top: -21px;
+  display: block;
+  border-radius: 16px 16px 16px 0px;
+  background: #3f04fe;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 9px;
+  text-transform: capitalize;
+  z-index: 1;
+  line-height: 0.8;
+  transform: translate(-50%, -50%);
+  top: 10px;
+  left: 50%;
+  max-width: 75px;
 }
 .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button {
   background: #3f04fe;
@@ -654,11 +674,21 @@
 .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__done-text-content {
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__done-text-content {
+    margin-bottom: 30px;
+  }
+}
 .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__done-text-content--done-icon {
   display: flex;
   align-items: end;
   justify-content: center;
   gap: 30px;
+}
+@media (max-width: 768px) {
+  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__done-text-content--done-icon {
+    gap: 20px;
+  }
 }
 .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__testimonial {
   padding: 25px 30px 50px 30px;
