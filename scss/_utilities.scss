@@ -17,7 +17,7 @@ $button-bg-color: #F7F4FF;
 
 
 
-// setup wizard heading one
+// heading common class
 .setup-wizard__heading-one {
     color: $heading-color;
     font-size: 32px;
@@ -39,6 +39,7 @@ $button-bg-color: #F7F4FF;
     }
   }
 
+  // description common class
   .setup-wizard__description {
     font-size: 16px;
     color: $description-color;
@@ -57,6 +58,7 @@ $button-bg-color: #F7F4FF;
 
   }
 
+  // section container common class
   %section-container{
     margin-top: 34px;
     border-radius: 10px;
@@ -69,6 +71,7 @@ $button-bg-color: #F7F4FF;
     }
   }
 
+  // button container common class
   %button-container{
     display: flex;
     align-items: center;
@@ -76,6 +79,7 @@ $button-bg-color: #F7F4FF;
     gap: 40px;
   }
 
+  // common button class
   %common-button{
     display: block;
     text-decoration: none;

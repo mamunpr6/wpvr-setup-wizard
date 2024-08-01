@@ -278,7 +278,7 @@
 }
 @media (max-width: 768px) {
   .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image img {
-    width: 30px;
+    max-width: 30px;
   }
 }
 .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-text-content .setup-wizard__feature-heading {
@@ -462,6 +462,13 @@
   top: 10px;
   left: 50%;
   max-width: 75px;
+}
+@media (max-width: 768px) {
+  .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-features-price .setup-wizard__pro-features-price-tag {
+    max-width: 70px;
+    font-size: 12px;
+    padding: 7px 8px;
+  }
 }
 .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__pro-features-section-container .setup-wizard__pro-feature-list-button-container .setup-wizard__pro-feature-list-button {
   background: #3f04fe;
@@ -767,7 +774,6 @@
   justify-content: start;
   gap: 11px;
   margin-top: 24px;
-  /* Rounded sliders */
 }
 @media (max-width: 768px) {
   .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container {
@@ -788,23 +794,23 @@
     line-height: 1.5;
   }
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .switch {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch {
   position: relative;
   display: inline-block;
   width: 42px;
   height: 22px;
 }
 @media (max-width: 768px) {
-  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .switch {
+  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch {
     margin-top: 5px;
   }
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .switch input {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .slider {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch .setup-wizard__switch-slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -814,7 +820,7 @@
   background-color: #ccc;
   transition: 0.4s;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .slider:before {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch .setup-wizard__switch-slider:before {
   position: absolute;
   content: "";
   height: 18px;
@@ -824,23 +830,23 @@
   background-color: white;
   transition: 0.4s;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container input:checked + .slider {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch input:checked + .setup-wizard__switch-slider {
   background-color: #3f04fe;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container input:focus + .slider {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch input:focus + .setup-wizard__switch-slider {
   box-shadow: 0 0 1px #2196F3;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container input:checked + .slider:before {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch input:checked + .setup-wizard__switch-slider:before {
   transform: translateX(16px);
 }
 @media (max-width: 768px) {
-  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container input:checked + .slider:before {
+  .setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch input:checked + .setup-wizard__switch-slider:before {
     transform: translateX(12px);
   }
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .slider.round {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch .setup-wizard__switch-round {
   border-radius: 34px;
 }
-.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .slider.round:before {
+.setup-wizard__body-content .setup-wizard__done-section-container .setup-wizard__subscribe-button-container .setup-wizard__switch .setup-wizard__switch-round:before {
   border-radius: 50%;
 }/*# sourceMappingURL=custom.css.map */
