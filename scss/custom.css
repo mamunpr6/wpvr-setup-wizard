@@ -235,12 +235,12 @@
     width: 650px;
   }
 }
-.setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__video-play-button {
+.setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__welcome-video-container .setup-wizard__video-play-button {
   position: absolute;
   top: 42%;
   left: 45%;
 }
-.setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__video-play-button button {
+.setup-wizard__body-content .setup-wizard__welcome-section-container .setup-wizard__welcome-video-container .setup-wizard__video-play-button button {
   border: none;
   cursor: pointer;
   background: none;

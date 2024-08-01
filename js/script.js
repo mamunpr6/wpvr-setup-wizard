@@ -1,7 +1,6 @@
 
 // play youtube video
 document.getElementById("video_play_button").addEventListener("click", () => {
-  console.log("clicked");
   const yt_video = "https://www.youtube.com/embed/SWsv-bplne8?autoplay=1";
 
   // Show the video iframe
