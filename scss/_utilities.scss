@@ -4,16 +4,8 @@ $secondary-color: #00B4FF;
 $heading-color: #0e003c;
 $description-color: #73707D;
 $color-white: #FFFFFF;
-
 $body-background-color: #E4E0F1;
-$step_color_primary: #6c798f;
-$progress-active-font-color: #FFFFFF;
-$progress-visited-font-color: #081e43;
-$progress-not-visited-font-color: #73707D;
 $primary-font: 'Urbanist', sans-serif;
-$border-radius: '10px';
-
-$button-bg-color: #F7F4FF;
 
 
 
@@ -21,13 +13,13 @@ $button-bg-color: #F7F4FF;
 .setup-wizard__heading-one {
     color: $heading-color;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     font-family: $primary-font;
     line-height: 1;
   
     .setup-wizard__heading-one-highlight {
-      font-weight: 700;
+      font-weight: 600;
     }
   
     @media (max-width: 1280px) {
