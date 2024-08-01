@@ -276,11 +276,11 @@
   align-items: start;
   gap: 27px;
 }
-.setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image {
+.setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image img {
   width: 35px;
 }
 @media (max-width: 768px) {
-  .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image {
+  .setup-wizard__body-content .setup-wizard__features-section-container .setup-wizard__feature-lists .setup-wizard__single-feature .setup-wizard__feature-image img {
     width: 30px;
   }
 }
