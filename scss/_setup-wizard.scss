@@ -13,6 +13,10 @@
     .setup-wizard__logo-container {
       text-align: center;
       padding: 32px 0;
+
+      @media (max-width: 768px) {
+        padding: 28px 0;
+      }
   
       figure {
         margin: 0;
@@ -55,7 +59,7 @@
             right: -18px;
             margin: auto 0;
             width: 40px;
-            height: 43px;
+            height: 42px;
             background: rgb(255 255 255);
             transform: rotate(-43deg);
             clip-path: polygon(100% 2%, 2% 100%, 100% 100%);
@@ -71,8 +75,8 @@
             font-weight: 400;
             gap: 9px;
             margin: 0;
-            font-family: "-apple-system", sans-serif;
-            color: #6e786e;
+            font-family: $primary-font;
+            color: $description-color;
   
             span {
               border: 1px solid $secondary-color;
@@ -105,10 +109,16 @@
             background: $secondary-color;
             color: #ffffff;
             p{
+
+              font-weight: 400;
+              color: #fff;
+
               span{
                 &:nth-child(1){
                   display: none;
                 }
+
+                border: 1px solid #ffffff;
               }
             }
   
@@ -117,35 +127,22 @@
               border-right: none;
               border-bottom: none;
             }
-  
-            p {
-              font-weight: 500;
-              color: #fff;
-  
-              span {
-                border: 1px solid #ffffff;
-              }
-            }
           }
   
           &--visited {
             background: #ffffff;
-            p{
-              span{
-                &:nth-child(2){
-                  display: none;
-                }
-              }
-            }
-  
             p {
               font-weight: 600;
-              color: #081e43;
+              color: $description-color;
   
               span {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                &:nth-child(2){
+                  display: none;
+                }
   
                 svg {
                   width: 9px;
@@ -220,7 +217,7 @@
         }
         .setup-wizard__button-right {
           @extend %common-button;
-          color: $primary-color;
+          color: $heading-color;
           border: 1px solid #ebe4ff;
           background: #f7f4ff;
         }
@@ -240,30 +237,48 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 165px;
         row-gap: 50px;
+
+        @media (max-width: 768px) {
+          column-gap: 50px;
+          row-gap: 40px;
+        }
         .setup-wizard__single-feature {
           display: flex;
           align-items: start;
           gap: 27px;
           .setup-wizard__feature-image {
-            width: 40px;
+            width: 35px;
+
+            @media (max-width: 768px) {
+              width: 30px;
+            }
           }
           .setup-wizard__feature-text-content {
             .setup-wizard__feature-heading {
-              color: #0e003c;
+              color: $heading-color;
               font-family: Urbanist;
               font-size: 18px;
               font-style: normal;
               font-weight: 600;
               line-height: 27px;
+
+              @media (max-width: 768px) {
+                font-size: 17px;
+              }
             }
             .setup-wizard__feature-description {
-              color: #73707d;
-              font-family: Urbanist;
+              color: $description-color;
+              font-family: $primary-font;
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
-              line-height: 26px;
+              line-height: 1.6;
               margin-top: 3px;
+
+              @media (max-width: 768px) {
+                font-size: 15px;
+              }
+              
             }
           }
         }
@@ -272,6 +287,9 @@
       .setup-wizard__feature-list-button-container{
         margin-top: 42px;
         margin-bottom: 67px;
+        @media (max-width: 768px) {
+          margin-bottom: 50px;
+        }
   
         .setup-wizard__feature-list-button{
           @extend %common-button;
@@ -287,6 +305,10 @@
           justify-content: center;
           gap: 15px;
           color: $primary-color;
+
+          @media (max-width: 768px) {
+            font-size: 15px;
+          }
         }
       }
   
@@ -295,9 +317,17 @@
   
         .setup-wizard__pro-features{
           padding: 38px 46px 46px 46px;
-  
+
+          @media (max-width: 768px) {
+            padding: 34px 40px 40px 40px;
+          }
+
           .setup-wizard__pro-features-text-content {
             margin-bottom: 28px;
+
+            @media (max-width: 768px) {
+              margin-bottom: 24px;
+            }
     
             .setup-wizard__pro-feature-heading{
               color: #0E003C;
@@ -306,6 +336,10 @@
               font-style: normal;
               font-weight: 700;
               line-height: 42px;
+
+              @media (max-width: 768px) {
+                font-size: 22px;
+              }
     
               .setup-wizard__pro-feature-heading-highlight{
                 color: #3F04FE;
@@ -323,6 +357,11 @@
             grid-template-columns: repeat(2, 1fr);
             column-gap: 143px;
             row-gap: 25px;
+
+            @media (max-width: 768px) {
+              column-gap: 60px;
+              row-gap: 20px;
+            }
   
             .setup-wizard__single-pro-feature{
               display: flex;
@@ -340,6 +379,10 @@
               font-style: normal;
               font-weight: 500;
               line-height: 27px;
+
+              @media (max-width: 768px) {
+                font-size: 17px;
+              }
               }
             }
           }
@@ -356,6 +399,11 @@
           padding: 23px 40px;
           border-top: 1px solid #FFF;
           position: relative;
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+            padding: 20px 40px;
+          }
           }
           .setup-wizard__pro-features-price-amount{
             color: #3F04FE;
@@ -364,6 +412,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: 28px;
+
+            @media (max-width: 768px) {
+              font-size: 22px;
+            }
           }
         }
         .setup-wizard__pro-feature-list-button-container{
@@ -457,6 +509,11 @@
             cursor: pointer;
             transition: all 0.3s;
 
+            @media (max-width: 768px) {
+              padding: 18px 5px;
+              gap: 20px;
+            }
+
             &:hover{
               border: 1.5px solid #3F04FE; 
               box-shadow: 0px 9px 14px rgba(184, 196, 217, 0.5);
@@ -471,6 +528,10 @@
               line-height: 1.14;
               margin: 0;
               font-family: 'Roboto', sans-serif;
+
+              @media (max-width: 768px) {
+                font-size: 13px;
+              }
             }
 
             &:hover .setup-wizard__single-industry-image path {
@@ -505,64 +566,6 @@
         margin-left: auto;
         margin-right: auto;
 
-        // .rex-wpvr-setup-form-group{
-        //   margin-bottom: 16px;
-
-        //   .rex-wpvr-required-text{
-        //     font-size: 12px;
-        //     font-family: 'Roboto';
-        //     text-align: start;
-        //     margin-top: 8px;
-        //     color: red;
-        //     display: none;
-
-        //     &.active{
-        //       display: block;
-        //     }
-        //   }
-
-        //   &:last-child{
-        //     margin-bottom: 0;
-        //   }
-
-        //   label{
-        //     color: #363B4E;
-        //     font-size: 14px;
-        //     font-style: normal;
-        //     font-weight: 500;
-        //     line-height: 1;
-        //     margin-bottom: 8px;
-        //     display: inline-block;
-        //   }
-
-        //   input{
-        //     border-radius: 10px;
-        //     border: 1px solid #EAE4FF;
-        //     background: #FFF;
-        //     color: #363B4E;
-        //     width: 100%;
-        //     padding: 5px 15px;
-        //     height: 50px;
-        //     font-size: 16px;
-        //     font-family: 'Roboto';
-        //     font-weight: 400;
-        //     color: #6C798F;
-
-        //     &::placeholder {
-        //       font-size: 16px;
-        //       font-family: 'Roboto';
-        //       font-weight: 400;
-        //       color: #6C798F
-        //     }
-
-        //     &:focus {
-        //       border-color: #3F04FE;
-        //       outline: none;
-        //       box-shadow: 0 0 5px rgba(184, 196, 217, 0.5);
-        //     }
-        //   }
-        // }
-
         .setup-wizard__settings-single-content {
          margin-bottom: 25px;
          position: relative;
@@ -582,6 +585,11 @@
           text-transform: capitalize;
           z-index: 1;
           line-height: 0.8;
+
+          @media (max-width: 768px) {
+            top: -20px;
+            font-size: 12px;
+          }
          }
 
           &:last-child {
@@ -608,6 +616,11 @@
             border: 1px solid #EAE4FF; 
             border-radius: 3px;
             transition: all 0.3s;
+
+            @media (max-width: 768px) {
+              font-size: 14px;
+              padding: 15px 40px 15px 68px;
+            }
           }
         
           input[type="checkbox"] + label:before {
@@ -622,6 +635,11 @@
             background: #FFFFFF;
             border: 1px solid #D8CCFF;
             border-radius: 4px;
+
+            @media (max-width: 768px) {
+              width: 23px;
+              height: 23px;
+            }
           }
         
           input[type="checkbox"]:checked + label:before {
@@ -696,6 +714,10 @@
         padding: 25px 30px 50px 30px;
         border: 1px solid #F5F2FF;
         border-radius: 10px;
+
+        @media (max-width: 768px) {
+          padding: 25px 30px 35px 30px;
+        }
         .setup-wizard__testimonial-title{
           color: #0E003C;
           font-family: Urbanist;
@@ -704,6 +726,10 @@
           font-weight: 600;
           line-height: 34px;
           margin-bottom: 50px;
+
+          @media (max-width: 768px) {
+            font-size: 22px;
+          }
         }
         .setup-wizard__testimonial-card{
           display: flex;
@@ -717,6 +743,10 @@
             box-shadow: 0px 1px 1px 0px rgba(63, 4, 254, 0.15);
             padding: 30px;
             width: 100%;
+
+            @media (max-width: 768px) {
+              padding: 25px;
+            }
             .setup-wizard__testimonial-text-content{
               color: #0E003C;
               font-family: $primary-font;
@@ -733,6 +763,11 @@
               font-style: normal;
               font-weight: 500;
               line-height: 26px;
+
+              @media (max-width: 768px) {
+                margin-top: 15px;
+                font-size: 17px;
+              }
             }
             .setup-wizard__testimonial-quote-icon{
               position: absolute;
@@ -751,6 +786,10 @@
         gap: 11px;
         margin-top: 24px;
 
+        @media (max-width: 768px) {
+          align-items: start;
+        }
+
         p{
           color: #73707D;
           font-family: Urbanist;
@@ -758,6 +797,11 @@
           font-style: normal;
           font-weight: 400;
           line-height: 2.1;
+
+          @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: 1.5;
+          }
         }
 
         // switcher
@@ -766,6 +810,11 @@
           display: inline-block;
           width: 42px;
           height: 22px;
+
+        @media (max-width: 768px) {
+          margin-top: 5px;
+        }
+
         }
         
         .switch input { 
@@ -809,6 +858,12 @@
           -webkit-transform: translateX(16px);
           -ms-transform: translateX(16px);
           transform: translateX(16px);
+          @media (max-width: 768px) {
+            -webkit-transform: translateX(12px);
+            -ms-transform: translateX(12px);
+            transform: translateX(12px);
+          }
+          
         }
         
         /* Rounded sliders */

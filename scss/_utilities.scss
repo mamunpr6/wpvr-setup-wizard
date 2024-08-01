@@ -1,7 +1,10 @@
 // Color
 $primary-color: #3f04fe;
-$heading-color: #0e003c;
 $secondary-color: #00B4FF;
+$heading-color: #0e003c;
+$description-color: #73707D;
+$color-white: #FFFFFF;
+
 $body-background-color: #E4E0F1;
 $step_color_primary: #6c798f;
 $progress-active-font-color: #FFFFFF;
@@ -9,7 +12,7 @@ $progress-visited-font-color: #081e43;
 $progress-not-visited-font-color: #73707D;
 $primary-font: 'Urbanist', sans-serif;
 $border-radius: '10px';
-$color-white: #FFFFFF;
+
 $button-bg-color: #F7F4FF;
 
 
@@ -28,13 +31,17 @@ $button-bg-color: #F7F4FF;
     }
   
     @media (max-width: 1280px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 768px) {
       font-size: 28px;
     }
   }
 
   .setup-wizard__description {
     font-size: 16px;
-    color: #73707D;
+    color: $description-color;
     text-align: center;
     line-height: 1.625;
     max-width: 655px;
@@ -44,13 +51,10 @@ $button-bg-color: #F7F4FF;
     font-style: normal;
     margin-top: 20px;
   
-    @media (max-width: 1024px) {
-      font-size: 14px;
+    @media (max-width: 768px) {
+      font-size: 15px;
     }
-  
-    @media (max-width: 1280px) {
-      padding: 0;
-    }
+
   }
 
   %section-container{
@@ -59,6 +63,10 @@ $button-bg-color: #F7F4FF;
     background: #FFF;
     padding: 40px 40px 44px 40px;
     box-shadow: 0px 1px 1px 0px rgba(184, 177, 206, 0.70);
+
+    @media (max-width: 768px) {
+      padding: 35px 35px 39px 35px;
+    }
   }
 
   %button-container{
@@ -77,4 +85,9 @@ $button-bg-color: #F7F4FF;
     font-style: normal;
     font-weight: 500;
     padding: 17px 22px;
+
+    @media (max-width: 768px) {
+      font-size: 17px;
+      padding: 15px 20px;
+    }
   }
